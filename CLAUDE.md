@@ -96,7 +96,13 @@
 - 9년 체성분 리듬 대시보드: https://claude.ai/code/artifact/2bb8f672-d2d8-4b50-acb8-c908402cdfb1
 - 냉장고 체크리스트(8주): https://claude.ai/code/artifact/c3088d52-63c2-4b02-b6e0-1774301efaaa
   - 모바일/오프라인용 파일: `~/Downloads/효주-냉장고작전.html`
-- **2026 여름 컷 9주 계획표** (7/1→9/1, 30%→22%, 포함식): https://claude.ai/code/artifact/92cfc795-10c7-4e70-88d0-cc694eee42d6 — 11·12번 기반. 주기화 궤적+주간 인바디 기록칸+운동날/쉬는날 식단+유지 프로토콜. 소스 HTML: 세션 스크래치패드 `hyoju-summer-cut.html`.
+- **2026 여름 컷 9주 계획표**(아티팩트, 7/1→9/1, 30%→22%, 포함식): https://claude.ai/code/artifact/92cfc795-10c7-4e70-88d0-cc694eee42d6 — 11·12번 기반. 소스 HTML: 세션 스크래치패드 `hyoju-summer-cut.html`.
+- **📱 여름 컷 모바일 웹앱 (라이브)**: https://jan166.github.io/health-system-app/ — 탭 3개(플랜·운동·식단), 첫 주 운동 루틴(A하체/B등어깨/C후면) 체크·localStorage 저장. noindex(검색 비노출). 소스 `~/Documents/health-system-app/index.html`.
+
+### GitHub 저장소 (2026-07-01 구축)
+- **`jan166/health-system` (⚠️PRIVATE)**: https://github.com/jan166/health-system — 이 폴더 전체 백업(CLAUDE.md+data). 의료정보 포함이라 **절대 public 전환 금지**. Apple Health zip(202MB)은 .gitignore로 제외, 로컬만 보관.
+- **`jan166/health-system-app` (public)**: https://github.com/jan166/health-system-app — 웹앱만. 개인 의료정보 없음. GitHub Pages 배포.
+- 로컬 폴더 2개 분리: 데이터=`~/Documents/health-system/`, 웹앱=`~/Documents/health-system-app/`.
 
 ## 9. ⚠️ 매년 리마인드할 것
 **10월(연말 행사 시즌, DAN26 등) 들어가기 전에 "운동 사수 일정 미리 잡기"를 리마인드.**
