@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# 대용량 원본 (GitHub 100MB 제한 초과 · 로컬 보관)
+data/apple-health-export_*.zip
+
+# 세션 임시파일
+scratchpad/
+*.tmp
