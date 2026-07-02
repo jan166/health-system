@@ -88,7 +88,11 @@
 ※ 만약 정말 쓴다면 인슐린 저항성 타겟이라 마운자로(GLP-1+GIP) > 위고비지만, 검사상 IR 근거 없어 권장 안 함.
 
 ## 7. 데이터 소스 (원본은 `./data/`에 보관)
-- `data/apple-health-export_2026-06-29.zip` (Apple Health, 2017.09~2026.06) — 압축 풀면 9.6GB, 핵심은 `export.xml`. InBody가 BodyMass/BodyFat 기록, **LeanBodyMass는 lb 단위**(÷2.2046 = kg).
+- **⭐ 정제 CSV (2026-07-02 추출, zip 대신 이것부터 읽기)** — `export.xml`을 스트리밍 파싱해 뽑은 분석용 CSV 3종. Git에 커밋됨(각 수십~수백 KB). 스키마·사용법은 `data/README-extracted.md`. **판단은 `source=InBody`로 필터**(효주는 인바디 기준).
+  - `data/inbody-timeseries.csv` — 체성분 시계열(체중·체지방률%·제지방kg·BMI), source별(InBody/PICOOC), 2017~2026.
+  - `data/daily-activity.csv` — 일별 걸음·활동에너지·운동시간·거리(연말 붕괴 사이클 분석용).
+  - `data/workouts.csv` — 운동 세션별 종류·시간.
+- `data/apple-health-export_2026-06-29.zip` (Apple Health, 2017.09~2026.06) — **원본**. export.xml 3.4GB, InBody가 BodyMass/BodyFat 기록, **LeanBodyMass는 lb 단위**(÷2.2046 = kg). ⚠️ 100MB 초과라 Git 제외(로컬만). 위 CSV에 없는 지표가 필요할 때만 재파싱(스크립트: 세션 스크래치패드 `extract_health.py`).
 - `data/건강검진_2025-10-30.pdf` (**비번 960916**) — 2025-10-30 검진. `pdftotext -upw 960916`로 추출.
 - 갑상선: 네이버부속의원 2026-05-23 (TSH 1.43 / FT4 1.08). ※ 원본 이미지는 세션 캐시에서 만료돼 미보관 — 값만 여기 기록. 필요하면 효주가 다시 첨부.
 - 캘린더: `cal list --start --end` (EventKit, Google·iCloud 통합) — 운동/행사 일정 교차 확인용
