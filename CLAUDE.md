@@ -92,6 +92,7 @@
   - `data/inbody-timeseries.csv` — 체성분 시계열(체중·체지방률%·제지방kg·BMI), source별(InBody/PICOOC), 2017~2026.
   - `data/daily-activity.csv` — 일별 걸음·활동에너지·운동시간·거리(연말 붕괴 사이클 분석용).
   - `data/workouts.csv` — 운동 세션별 종류·시간.
+  - `data/2024-cut-diary-daily.csv` — **2024 바디프로필 컷 일별 섭취·운동소모**(다이어리 앱 IMG_4925~4930 디지털화). Apple Health엔 2024 4~5월이 없어(워치 미착용) 이 컷 일별 실측의 유일 소스.
 - `data/apple-health-export_2026-06-29.zip` (Apple Health, 2017.09~2026.06) — **원본**. export.xml 3.4GB, InBody가 BodyMass/BodyFat 기록, **LeanBodyMass는 lb 단위**(÷2.2046 = kg). ⚠️ 100MB 초과라 Git 제외(로컬만). 위 CSV에 없는 지표가 필요할 때만 재파싱(스크립트: 세션 스크래치패드 `extract_health.py`).
 - `data/건강검진_2025-10-30.pdf` (**비번 960916**) — 2025-10-30 검진. `pdftotext -upw 960916`로 추출.
 - 갑상선: 네이버부속의원 2026-05-23 (TSH 1.43 / FT4 1.08). ※ 원본 이미지는 세션 캐시에서 만료돼 미보관 — 값만 여기 기록. 필요하면 효주가 다시 첨부.
