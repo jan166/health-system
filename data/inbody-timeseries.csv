@@ -4055,3 +4055,4 @@ date,datetime,metric,value,source
 2026-08-05,2026-08-05 06:27:00 +0900,body_fat_pct,29.0,InBody
 2026-08-05,2026-08-05 06:27:00 +0900,body_mass_kg,63.8,InBody
 2026-08-05,2026-08-05 06:27:00 +0900,lean_body_mass_kg,45.3,InBody
+2026-08-05,2026-08-05 00:00:00 +0900,waist_cm,71.5,manual
